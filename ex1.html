@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio1</title>
     <link rel="stylesheet" href="ex1.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 <body>
     <h1 class="meuH1">Desafio 1 <span id="meuSpan">SOITECH</span></h1>
+
+    <!-- Criando o botão que irá abrir o modal -->
+    <button id="botaoModal" onclick="AbrirModal()">Clique aqui</button>
+
+    <!-- Modal que irá se abrir quando clicar no botão -->
+    <div id="minhaModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" id="modalContent">
+          <span class="close">&times;</span>
+          <p>Insira uma nota no input</p>
+          <input type="number" id="inputModal">
+          <button class="botaoModal" onclick="EnviarNota()">Enviar Nota</button>
+        </div>  
+    </div>
 </body>
 
 <script src="ex1.js"></script>
+<script src="modal.js"></script>
 </html>
