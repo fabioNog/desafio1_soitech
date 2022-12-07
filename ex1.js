@@ -1,5 +1,6 @@
-let meuSpan = document.getElementById("meuSpan")
+//let meuSpan = document.getElementById("meuSpan")
 let modal = document.getElementById("minhaModal")
+
 var span = document.getElementsByClassName("close")[0];
 
 function AbrirModal(){
